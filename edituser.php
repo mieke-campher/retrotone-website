@@ -13,9 +13,9 @@ $oEmail;
 $oPhone;
 $oAddress;
 
-$servername = "sql206.infinityfree.com"; 
-$username = "if0_38299513"; 
-$password = "73023Huisies"; 
+$servername = "localhost"; 
+$username = "root"; 
+$password = ""; 
 
 $conn = new mysqli($servername, $username, $password);
 
@@ -23,7 +23,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "USE if0_38299513_RetroTone_DB";
+$sql = "USE RetroTone_DB";
 $conn->query($sql);
 
 $sql = "SELECT Users.UserName, Users.Password, Customer.CustomerName, Customer.CustomerEmail, Customer.CustomerPhone, Customer.CustomerAddress
