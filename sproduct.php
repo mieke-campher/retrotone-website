@@ -5,10 +5,10 @@ $customerId = $_SESSION['customerId'] ?? null;
 
 $_SESSION['redirect_url'] = $_SERVER['REQUEST_URI'];
 
-$servername = "sql206.infinityfree.com"; 
-$username = "if0_38299513"; 
-$password = "73023Huisies"; 
-$dbname = "if0_38299513_RetroTone_DB";
+$servername = "localhost"; 
+$username = "root"; 
+$password = ""; 
+$dbname = "RetroTone_DB";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
